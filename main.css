@@ -1,0 +1,390 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+    border-radius: 100px;
+}
+.item {
+    padding-bottom: 0;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: auto;
+    left: 50%;
+}
+.bio {
+    color: black;
+}
+.text {
+    display: none;
+}
+img{
+    padding: 4rem 0;
+}
+li {
+    color: dimgray;
+    font-size: 1.75rem;
+    padding-left: 2rem;
+    margin-bottom: 0;
+}
+ul {
+    margin-bottom: 0;
+}
+#intro {
+    font-size: 4rem;
+    font-family: 'Song Myung', serif;
+    margin: 0;
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero-bgs {
+    position: relative;
+}
+.hero-bg {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0;
+
+    display: none
+
+    /*position: absolute;*/
+    /*display: unset;*/
+    /*width: 900px;*/
+    /*margin: 1rem -12rem;*/
+    /*top: 8rem;*/
+    /*left: 3rem;*/
+    /*max-height: 250px;*/
+    /*z-index: -1;*/
+    /*visibility: visible;*/
+}
+.hero-bg + .hero-bg {
+    display: none;
+
+}
+
+/* Footer
+-------------------------------------------*/
+footer{
+    font-family: "Song Myung", serif;
+    color: darkgray;
+    padding: 2rem 0 1rem 0;
+}
+#footer {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* Navbar
+-------------------------------------------*/
+#outer {
+    width: 100%;
+    text-align: center;
+}
+
+#inner {
+    display: inline-block;
+}
+
+.topnav {
+    overflow: hidden;
+    padding: 3rem 0 3rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    font-family: "Song Myung", serif;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: grey;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+    padding: 0 0 7rem 0;
+    text-align: left;
+}
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
+.work{
+    padding: 0 0 0 0;
+}
+.work-header .description{
+    color: dimgray;
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+.work-header .title {
+    text-align: center;
+    font-family: "Song Myung", serif;
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.the-rest p {
+    color: dimgray;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+}
+.the-rest h1 {
+    font-family: "Song Myung", serif;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+.the-rest #summary{
+    padding-top: 1rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+    html {
+        font-size: 1vw;
+    }
+    footer{
+        padding: 0 0 5rem 0;
+    }
+    #footer {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #outer {
+        width: 80%;
+        text-align: right;
+    }
+    #inner {
+        display: inline-block;
+    }
+    li {
+        color: dimgray;
+        font-size: 2.5rem;
+        padding-left: 5rem;
+    }
+    .work-header .description{
+        padding-top: 1rem;
+        font-size: 2.5rem;
+        text-align: left;
+        line-height: 3rem;
+    }
+    .work-header .title {
+        text-align: left;
+        font-family: "Song Myung", serif;
+        font-size: 6rem;
+        padding-top: 3rem;
+        margin: 0;
+    }
+    .the-rest p {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        margin-bottom: 0;
+    }
+    .the-rest h1 {
+        font-family: "Song Myung", serif;
+        padding-top: 3rem;
+        font-size: 3.25rem;
+        margin-top: 0;
+    }
+    .the-rest #summary {
+        padding-top: 3rem;
+    }
+    .topnav {
+        overflow: hidden;
+        padding: 2rem 0 6rem;
+    }
+    .bio {
+        color: white;
+    }
+    .item {
+        padding-bottom: 8rem;
+        width: auto;
+        position: static;
+        margin-left: 0;
+        height: auto;
+        left: auto;
+    }
+    .section {
+        padding: 8rem 0 11rem;
+    }
+    .hero {
+        padding-bottom: 5rem;
+        text-align: left;
+        height: 165px;
+    }
+    .hero-bg {
+        position: absolute;
+        display: unset;
+        width: 900px;
+        margin: 10rem -12rem;
+        top: 8rem;
+        left: 3rem;
+        max-height: 300px;
+        z-index: -1;
+        visibility: visible;
+    }
+    .hero-heading {
+        font-size: 2.4rem;
+    }
+    .work {
+        padding: 0 0;
+    }
+    .topnav a {
+        float: right;
+    }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+    html {
+        font-size: .8vw;
+    }
+    .hero-heading {
+        font-size: 2.6rem;
+    }
+    .section {
+        padding: 14rem 0 15rem;
+    }
+    .hero {
+        height: 190px;
+        padding: 14rem 0 6rem;
+    }
+    .section-description {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-bg {
+        width: 1000px;
+        top: 6rem;
+        right: 5rem;
+        max-height: 510px;
+    }
+    .work{
+        padding: 0 0 0 0;
+    }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+    html {
+        font-size: .7vw;
+    }
+    .section {
+        padding: 26rem 0 19rem;
+    }
+    .hero {
+        padding: 10rem 0 0;
+    }
+    .hero-heading {
+        font-size: 3.0rem;
+    }
+    .hero-bg {
+        width: 1200px;
+        box-sizing: border-box;
+        top: 1rem;
+        max-height: 450px;
+    }
+    .work{
+        padding: 10rem 0 0 0;
+    }
+}
+
+/* Bigger than 1200 */
+@media (min-width: 1200px) {
+    html {
+        font-size: .6vw;
+    }
+    .section {
+        padding: 22rem 0 19rem;
+    }
+    .hero {
+        padding: 12rem 0 0;
+    }
+    .hero-heading {
+        font-size: 3.0rem;
+    }
+    .hero-bg {
+        width: 1400px;
+        box-sizing: border-box;
+        top: 1rem;
+        max-height: 450px;
+    }
+    .work{
+        padding: 10rem 0 0 0;
+    }
+}
+
+/* Bigger than 1500 */
+@media (min-width: 1500px) {
+    html {
+        font-size: .5rem;
+    }
+    .section {
+        padding: 22rem 0 19rem;
+    }
+    .hero {
+        padding: 10rem 0 0;
+    }
+    .hero-heading {
+        font-size: 3.0rem;
+    }
+    .hero-bg {
+        width: 90%;
+        box-sizing: border-box;
+        top: 1rem;
+        max-height: 450px;
+    }
+    .work{
+        padding: 10rem 0 0 0;
+    }
+}
+
+/* Animations */
+@media (min-width: 550px) {
+    .wrap {
+        display: inline-block;
+        position: relative;
+        padding: 1em;
+
+    }
+    .text {
+        font-size: 2.5rem;
+        background: #d81e5b;
+        color: #ffffff;
+        transition: opacity .3s;
+        opacity: 0;
+        position: absolute;
+        top: 1.5rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        right:  1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrap:hover .text {
+        opacity: .75;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
