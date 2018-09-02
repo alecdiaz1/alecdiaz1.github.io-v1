@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
-    <link rel="stylesheet" href="./Skeleton-2.0.4/css/skeleton.css">
-    <link rel="stylesheet" href="./Skeleton-2.0.4/css/normalize.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="css/Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="css/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Alec Diaz</title>
 </head>
 <body>
+
     <div class="container" id="outer">
         <div class="topnav" id="inner">
-            <a id="active" href="#">work</a>
+            <a href="#">work</a>
             <a href="#">about</a>
-            <a href="#">resume</a>
+            <a href="Design%20Resume.pdf">resume</a>
         </div>
     </div>
 
@@ -26,7 +27,7 @@
                     <h1 class="bio" id="intro">Hi, I'm Alec!</h1>
                     <h5 class="bio">I'm a designer from UC Irvine focused on UX/UI design.
                         I currently lead the design team for the UCI 2018-2019 Anthology.</h5>
-                    <a class="button button-primary" href="#">Resume</a>
+                    <a class="button button-primary" href="Design%20Resume.pdf">Resume</a>
                 </div>
             </div>
         </div>
@@ -35,26 +36,34 @@
         <div class="container">
             <div class="row item">
                 <div class="six columns"></div>
-                <div class="u-pull-right six columns wrap">
+                <div class="u-pull-right six columns img__wrap">
                     <a href="hyperion.html">
-                        <img class="u-max-full-width" src="./assets/Wall2Final-2.jpg">
-                        <div class="text">Hyperion Industries</div>
+                        <img class="u-max-full-width img__img" src="./assets/Wall2Final-2.jpg">
+                        <div class="img__description_layer">
+                            <p class="img__description">Hyperion Industries</p>
+                        </div>
                     </a>
                 </div>
             </div>
             <div class="row item">
-                <div class="six columns">
+                <div class="six columns img__wrap">
                     <a href="#">
-                        <img class="u-max-full-width" src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
+                        <img class="u-max-full-width img__img" src="http://www.portoalegre.travel/upload/b/2/20975_1280x720-wallpaper.jpg">
+                        <div class="img__description_layer">
+                            <p class="img__description">UCI Anthology 2018-2019</p>
+                        </div>
                     </a>
                 </div>
                 <div class="six columns"></div>
             </div>
             <div class="row item">
                 <div class="six columns"></div>
-                <div class="u-pull-right six columns">
-                    <a href="#">
-                        <img class="u-max-full-width" src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
+                <div class="u-pull-right six columns img__wrap">
+                    <a href="hyperion.html">
+                        <img class="u-max-full-width img__img" src="./assets/Wall2Final-2.jpg">
+                        <div class="img__description_layer">
+                            <p class="img__description">Hyperion Industries</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -63,6 +72,13 @@
     <footer>
         <p id="footer">Made with <3 by Alec Diaz</p>
     </footer>
+    <!--<script>-->
+        <!--ScrollReveal().reveal('h1');-->
+        <!--ScrollReveal().reveal('a');-->
+        <!--ScrollReveal().reveal('h2');-->
+        <!--ScrollReveal().reveal('p');-->
+        <!--ScrollReveal().reveal('img');-->
+    <!--</script>-->
 </body>
 </html>
 
