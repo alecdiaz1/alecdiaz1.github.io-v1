@@ -11,15 +11,31 @@
     height: auto;
     left: 50%;
 }
+#intro {
+    color: black
+}
 .bio {
-    color: black;
+    color: dimgray;
+    margin-bottom: 1rem;
 }
 .text {
     display: none;
 }
-.the-rest img{
-    padding: 4rem 0;
+.the-rest #me{
+    padding: 0;
+    max-height: 30rem;
 }
+.the-rest #about{
+    text-align: left;
+    padding: 0 0;
+}
+.the-rest #bio{
+    padding: 1rem 0 0 0;
+}
+.the-rest img{
+    padding: 2rem 0;
+}
+
 .img__description {
     display: none;
 }
@@ -70,7 +86,7 @@ ul {
 footer{
     font-family: "Song Myung", serif;
     color: darkgray;
-    padding: 2rem 0 1rem 0;
+    padding: 4rem 0 4rem 0;
 }
 #footer {
     font-size: 1.5rem;
@@ -164,7 +180,7 @@ footer{
         font-size: 1vw;
     }
     footer{
-        padding: 0 0 5rem 0;
+        padding: 10rem 0 5rem 0;
     }
     #footer {
         font-size: 2rem;
@@ -176,6 +192,12 @@ footer{
     }
     #inner {
         display: inline-block;
+    }
+    #intro {
+        padding-bottom: 4rem;
+    }
+    .bio {
+        padding-bottom: 4rem;
     }
     li {
         color: dimgray;
@@ -206,15 +228,19 @@ footer{
         font-size: 3.25rem;
         margin-top: 0;
     }
+    .the-rest img{
+        padding: 4rem 0;
+    }
     .the-rest #summary {
         padding-top: 3rem;
+    }
+    .the-rest #me{
+        padding: 0;
+        max-height: 100%;
     }
     .topnav {
         overflow: hidden;
         padding: 2rem 0 6rem;
-    }
-    .bio {
-        color: white;
     }
     .item {
         padding-bottom: 8rem;
@@ -306,7 +332,7 @@ footer{
         max-height: 450px;
     }
     .work{
-        padding: 10rem 0 0 0;
+        padding: 0 0;
     }
 }
 
