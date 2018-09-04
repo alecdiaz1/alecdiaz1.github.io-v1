@@ -17,6 +17,7 @@
 .bio {
     color: dimgray;
     margin-bottom: 1rem;
+    font-size: 1.25em;
 }
 .text {
     display: none;
@@ -31,6 +32,8 @@
 }
 .the-rest #bio{
     padding: 1rem 0 0 0;
+    font-size: 1.75rem;
+    line-height: 3rem;
 }
 .the-rest img{
     padding: 2rem 0;
@@ -148,8 +151,8 @@ footer{
 .work-header .description{
     color: dimgray;
     text-align: center;
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: 1.2em;
+    line-height: 3rem;
 }
 .work-header .title {
     text-align: center;
@@ -176,74 +179,8 @@ footer{
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
-    html {
-        font-size: 1vw;
-    }
-    footer{
-        padding: 10rem 0 5rem 0;
-    }
-    #footer {
-        font-size: 2rem;
-        text-align: center;
-    }
-    #outer {
-        width: 80%;
-        text-align: right;
-    }
-    #inner {
-        display: inline-block;
-    }
-    #intro {
-        padding-bottom: 4rem;
-    }
-    .bio {
-        padding-bottom: 4rem;
-    }
-    li {
-        color: dimgray;
-        font-size: 2.5rem;
-        padding-left: 5rem;
-    }
-    .work-header .description{
-        padding-top: 1rem;
-        font-size: 2.5rem;
-        text-align: left;
-        line-height: 3rem;
-    }
-    .work-header .title {
-        text-align: left;
-        font-family: "Song Myung", serif;
-        font-size: 6rem;
-        padding-top: 3rem;
-        margin: 0;
-    }
-    .the-rest p {
-        font-size: 2.5rem;
-        line-height: 4rem;
-        margin-bottom: 0;
-    }
-    .the-rest h1 {
-        font-family: "Song Myung", serif;
-        padding-top: 3rem;
-        font-size: 3.25rem;
-        margin-top: 0;
-    }
-    .the-rest img{
-        padding: 4rem 0;
-    }
-    .the-rest #summary {
-        padding-top: 3rem;
-    }
-    .the-rest #me{
-        padding: 0;
-        max-height: 100%;
-    }
-    .topnav {
-        overflow: hidden;
-        padding: 2rem 0 6rem;
-    }
     .item {
-        padding-bottom: 8rem;
+        padding-bottom: 2rem;
         width: auto;
         position: static;
         margin-left: 0;
@@ -251,39 +188,21 @@ footer{
         left: auto;
     }
     .section {
-        padding: 8rem 0 11rem;
-    }
-    .hero {
-        padding-bottom: 5rem;
+        padding: 0 0 0 0;
         text-align: left;
-        height: 165px;
     }
-    .hero-bg {
-        position: absolute;
-        display: unset;
-        width: 900px;
-        margin: 10rem -12rem;
-        top: 8rem;
-        left: 3rem;
-        max-height: 300px;
-        z-index: -1;
-        visibility: visible;
-    }
-    .hero-heading {
-        font-size: 2.4rem;
-    }
-    .work {
-        padding: 0 0;
-    }
-    .topnav a {
-        float: right;
+    .img__description {
+        font-size: 1em;
+        display: block;
+        transition: .2s;
+        transform: translateY(1em);
     }
 }
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
     html {
-        font-size: .8vw;
+        font-size: .9vw;
     }
     .hero-heading {
         font-size: 2.6rem;
@@ -309,12 +228,132 @@ footer{
     .work{
         padding: 0 0 0 0;
     }
+    .the-rest #bio{
+        padding: 1rem 0 0 0;
+        font-size: 1.1em;
+        line-height: 2em;
+    }
+    html {
+        font-size: 1vw;
+    }
+    footer{
+        padding: 10rem 0 5rem 0;
+    }
+    #footer {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #outer {
+        width: 80%;
+        text-align: right;
+    }
+    #inner {
+        display: inline-block;
+    }
+    #intro {
+        padding-bottom: 4rem;
+    }
+    .bio {
+        padding-bottom: 4rem;
+        font-size: 1.5em;
+    }
+    li {
+        color: dimgray;
+        font-size: 1.2em;
+        padding-left: 5rem;
+    }
+    .work-header .description{
+        padding-top: 1rem;
+        font-size: 2.5rem;
+        text-align: left;
+        line-height: 4rem;
+    }
+    .work-header .title {
+        text-align: left;
+        font-family: "Song Myung", serif;
+        font-size: 6rem;
+        padding-top: 3rem;
+        margin: 0;
+    }
+    .the-rest p {
+        font-size: 1.2em;
+        line-height: 3rem;
+        margin-bottom: 0;
+    }
+    .the-rest h1 {
+        font-family: "Song Myung", serif;
+        padding-top: 3rem;
+        font-size: 3.25rem;
+        margin-top: 0;
+    }
+    .the-rest img{
+        padding: 4rem 0;
+    }
+    .the-rest #summary {
+        padding-top: 3rem;
+    }
+    .the-rest #me{
+        padding: 0;
+        max-height: 100%;
+    }
+    .topnav {
+        overflow: hidden;
+        padding: 2rem 0 6rem;
+    }
+    .section {
+        padding: 8rem 0 11rem;
+    }
+    .hero {
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+        text-align: left;
+        height: 165px;
+    }
+    .hero-bg {
+        position: absolute;
+        display: unset;
+        width: 900px;
+        margin: 10rem -12rem;
+        top: 8rem;
+        left: 3rem;
+        max-height: 300px;
+        z-index: -1;
+        visibility: visible;
+    }
+    .hero-heading {
+        font-size: 2.4rem;
+    }
+    .work {
+        padding: 0 0;
+    }
+    .topnav a {
+        float: right;
+    }
+    .img__description {
+        font-size: 1.75em;
+        display: block;
+        transition: .2s;
+        transform: translateY(1em);
+    }
 }
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
     html {
         font-size: .7vw;
+    }
+    li {
+    font-size: 1.5em;
+}
+    .the-rest p {
+        font-size: 1.5em;
+        line-height: 4rem;
+        margin-bottom: 0;
+    }
+    .the-rest #bio{
+        padding: 1rem 0 0 0;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .section {
         padding: 26rem 0 19rem;
@@ -333,6 +372,10 @@ footer{
     }
     .work{
         padding: 0 0;
+    }
+    .bio {
+        padding-bottom: 4rem;
+        font-size: 1.75em;
     }
 }
 
@@ -417,12 +460,6 @@ footer{
         opacity: 1;
     }
 
-    .img__description {
-        font-size: 2.5rem;
-        display: block;
-        transition: .2s;
-        transform: translateY(1em);
-    }
 
     .img__wrap:hover .img__description {
         transform: translateY(0);
