@@ -12,11 +12,14 @@
     left: 50%;
 }
 #intro {
-    color: black
+    color: black;
+    padding-bottom: 3rem;
+}
+#description {
+    color: dimgray;
+    padding-bottom: 2rem;
 }
 .bio {
-    color: dimgray;
-    margin-bottom: 1rem;
     font-size: 1.25em;
 }
 .text {
@@ -251,7 +254,6 @@ footer{
         display: inline-block;
     }
     #intro {
-        padding-bottom: 4rem;
         font-size: 3.5em;
     }
     .bio {
@@ -436,6 +438,9 @@ footer{
         position: relative;
         height: auto;
         width: auto;
+        -webkit-box-shadow: 0 6px 27px -1px rgba(199,193,199,0.89);
+        -moz-box-shadow: 0 6px 27px -1px rgba(199,193,199,0.89);
+        box-shadow: 0 6px 27px -1px rgba(199,193,199,0.89);
     }
 
     .img__description_layer {
