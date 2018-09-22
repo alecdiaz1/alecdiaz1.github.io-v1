@@ -1,19 +1,46 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button {
-    border-radius: 100px;
+html {
+    box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* The Masonry Container */
+.masonry {
+    margin: 1.5em auto;
+    max-width: 1000px;
+    column-gap: 1.5em;
+    column-count: 1;
+}
+
+/* The Masonry Brick */
 .item {
-    padding-bottom: 0;
+    background: #fff;
+    padding: 1em 1em 0;
     width: 100vw;
     position: relative;
-    margin-left: -50vw;
+    margin: 0 0 1.5em -50vw;
     height: auto;
     left: 50%;
 }
+
+.button {
+    border-radius: 100px;
+}
+
 #intro {
     color: black
 }
+
+#top {
+    margin-bottom: 2em;
+}
+
 .bio {
     color: dimgray;
     margin-bottom: 1rem;
@@ -57,29 +84,7 @@ ul {
     font-family: 'Song Myung', serif;
     margin: 0;
 }
-.grid-sizer,
-.grid-item {
-    float: left;
-    width: 50%;
-}
 
-.grid-item {
-    height: 120px;
-    float: left;
-    background: #D26;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
-}
-
-/*.grid-item {*/
-    /*height: 120px;*/
-    /*float: left;*/
-    /*background: #D26;*/
-    /*border: 2px solid #333;*/
-    /*border-color: hsla(0, 0%, 0%, 0.5);*/
-    /*border-radius: 5px;*/
-/*}*/
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero-bgs {
@@ -89,18 +94,7 @@ ul {
     position: relative;
     max-width: 100%;
     margin: 0 0;
-
     display: none
-
-    /*position: absolute;*/
-    /*display: unset;*/
-    /*width: 900px;*/
-    /*margin: 1rem -12rem;*/
-    /*top: 8rem;*/
-    /*left: 3rem;*/
-    /*max-height: 250px;*/
-    /*z-index: -1;*/
-    /*visibility: visible;*/
 }
 .hero-bg + .hero-bg {
     display: none;
@@ -161,7 +155,7 @@ footer{
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
-    padding: 0 0 7rem 0;
+    padding: 0 0 0 0;
     text-align: left;
 }
 .section-heading,
@@ -226,6 +220,12 @@ footer{
 @media (min-width: 750px) {
     html {
         font-size: .9vw;
+    }
+    .masonry {
+        column-count: 2;
+    }
+    #top {
+        margin-bottom: 5em;
     }
     .hero-heading {
         font-size: 2.6rem;
@@ -412,7 +412,7 @@ footer{
         padding: 22rem 0 19rem;
     }
     .hero {
-        padding: 12rem 0 0;
+        padding: 6rem 0 0;
     }
     .hero-heading {
         font-size: 3.0rem;
@@ -437,7 +437,7 @@ footer{
         padding: 22rem 0 19rem;
     }
     .hero {
-        padding: 10rem 0 0;
+        padding: 5rem 0 0;
     }
     .hero-heading {
         font-size: 3.0rem;
@@ -454,6 +454,12 @@ footer{
 }
 
 /* Animations */
+.img__wrap {
+    -webkit-box-shadow: 0 5px 18px 0 rgba(168, 168, 168, 0.75);
+    -moz-box-shadow: 0 5px 18px 0 rgba(168, 168, 168, 0.75);
+    box-shadow: 0 5px 18px 0 rgba(168, 168, 168, 0.75);
+}
+
 @media (min-width: 550px) {
     .img__wrap {
         position: relative;
